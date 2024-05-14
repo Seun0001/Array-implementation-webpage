@@ -1,7 +1,20 @@
+// function displayArray() {
+//   const formattedOutput = formatArrayList(myArrayList);
+//   const outputDiv = document.getElementById("output");
+//   outputDiv.innerHTML = formattedOutput;
+// }
+let isDisplayed = false;
+
 function displayArray() {
-  const formattedOutput = formatArrayList(myArrayList);
-  const outputDiv = document.getElementById("output");
-  outputDiv.innerHTML = formattedOutput;
+  if (!isDisplayed) {
+    const formattedOutput = formatArrayList(myArrayList);
+    const outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = formattedOutput;
+    isDisplayed = true;
+  } else {
+    outputDiv.innerHTML = "";
+    isDisplayed = false;
+  }
 }
 
 function formatArrayList(arrayList) {
