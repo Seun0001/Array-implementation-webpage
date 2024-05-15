@@ -17,3 +17,5 @@
 + ### Project Rate: _100% Complete_
 
 ```
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3a3e7699-a572-4809-9c5d-2ae891422535/deploy-status)](https://app.netlify.com/sites/array-implementation-webpage/deploys)
