@@ -28,7 +28,7 @@ function formatArrayList(arrayList) {
   // Loop through each item in the array list
   arrayList.forEach((item) => {
     // Add a div element to the formatted output
-    formattedOutput += `<div>`;
+    formattedOutput += `<div style = "color: chartreuse; font-weight: bold;">`;
     // Loop through each key in the item
     for (let key in item) {
       // Add a paragraph element to the formatted output with the key and value

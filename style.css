@@ -1,16 +1,27 @@
 body {
-  background-color: rgba(50, 100, 10, 0.3);
+  background-image: url(./image/flexisafLogo.png);
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* background-color: rgba(50, 100, 10, 0.3); */
+  background-color: rgb(24, 9, 235);
   cursor: pointer;
+}
+h1 {
+  background: linear-gradient(cyan 50%, white 50%);
+  padding-left: 0.8rem;
 }
 #output {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   border: 0.25rem solid #ccc;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  /* display: none; */
 }
 button {
   border: 0.125rem solid #aaa;
-  background-color: #83ee09;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: hsl(88, 93%, 48%);
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1rem;
 }
