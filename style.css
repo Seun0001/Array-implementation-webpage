@@ -1,27 +1,61 @@
+/* Pc view of the webpage */
+* {
+  width: 100%;
+}
 body {
-  background-image: url(./image/flexisafLogo.png);
-  width: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  /* background-color: rgba(50, 100, 10, 0.3); */
-  background-color: rgb(24, 9, 235);
-  cursor: pointer;
+  background-color: rgb(10, 100, 100);
+  cursor: pointer; width: 50%; margin: 0 auto;
 }
 h1 {
-  background: linear-gradient(cyan 50%, white 50%);
-  padding-left: 0.8rem;
+  background: linear-gradient(cyan 50%, grey 50%);
+  padding-left: 0.8rem; margin-top: 0.5rem;
 }
 #output {
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-  border: 0.25rem solid #ccc;
-  /* background-color: #f9f9f9; */
-  /* display: none; */
+  padding: 0.5rem; margin-bottom: 0.5rem;
+  background-image: url("./image/flexisafLogo.png");
+  background-repeat: no-repeat; background-position: right;
+  background-size: contain;
+  background-color: rgb(32, 71, 248);
 }
 button {
-  border: 0.125rem solid #aaa;
-  background-color: hsl(88, 93%, 48%);
+  font-weight: bold; background-color: hsl(88, 93%, 48%);
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1rem;
+  font-size: 1rem; margin-left: 0.5rem;
+}
+h1,
+#output,
+button {
+  border: 0.25rem solid #aaa; border-radius: 10px 0px;
+}
+ul {
+  display: flex; list-style: none;
+}
+tr > th > a {
+  text-decoration: none; list-style: none; color: #fff;
+  background: linear-gradient(grey 50%, blue 50%);
+}
+th {
+  padding: 10px 20px 20px 30px; text-align: left;
+}
+
+div > table {
+  width: 100%;
+}
+table,
+th {
+  border: 1px solid white; border-collapse: collapse;
+}
+
+/* Mobile view of the webpage */
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: lightseagreen; width: 100%; margin: 1%;
+  }
+  tr > th > a {
+    text-decoration: none; list-style: none;
+    background: linear-gradient(blue 50%, grey 50%);
+  }
+  #output {
+    background-color: blue;
+  }
 }
